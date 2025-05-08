@@ -34,18 +34,18 @@ body {
 }
 
 /* Navbar */
+.logo {
+  width: 100px;
+  height: auto;
+}
+
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 40px;
   background-color: #fff;
   border-bottom: 1px solid #e0e0e0;
   box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-header img {
-  height: 40px;
 }
 
 nav {
@@ -208,7 +208,7 @@ nav a:hover::after {
 
 /* General Section Styling */
 .section {
-  padding: 80px 40px;
+  padding: 20px 10px;
   position: relative;
 }
 
@@ -231,7 +231,7 @@ nav a:hover::after {
 
 .card {
   background: white;
-  padding: 30px;
+  padding: 20px;
   border-radius: 15px;
   box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
   width: 320px;
@@ -258,7 +258,7 @@ nav a:hover::after {
 
 .card h3 {
   color: #00aabb;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 1.5rem;
 }
 
@@ -275,6 +275,7 @@ nav a:hover::after {
 
 .two-card .card p {
   font-size: 1.2rem;
+  text-align: justify;
 }
 
 
@@ -284,6 +285,7 @@ nav a:hover::after {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  text-align: justify;
   padding: 80px 40px;
   flex-wrap: wrap;
   position: relative;
@@ -326,6 +328,7 @@ nav a:hover::after {
   color: #00aabb;
   margin-bottom: 20px;
   font-size: 2.2rem;
+  text-align: center;
 }
 
 .promo p {
@@ -416,7 +419,7 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
-  padding: 40px 20px;
+  padding: 20px 10px;
   margin-top: 0;
 }
 
@@ -477,10 +480,9 @@ footer {
   
   .hero .content {
     margin-right: 0;
-    width: 90%;
-    max-width: 450px;
+    width: 100%;
   }
-  
+
   .overlay {
     background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 100%);
   }
@@ -490,11 +492,7 @@ footer {
 @media (max-width: 768px) {
   header {
     flex-direction: column;
-    padding: 15px;
-  }
-  
-  header img {
-    margin-bottom: 15px;
+    padding: 5px;
   }
   
   nav {
@@ -507,10 +505,6 @@ footer {
     margin: 5px 10px;
   }
   
-  .language-switcher {
-    margin: 15px 0 0;
-  }
-  
   .hero {
     justify-content: center;
   }
@@ -518,14 +512,18 @@ footer {
   .hero .content {
     margin-right: 0;
     margin-left: 0;
-    width: 90%;
+    width: 70%;
     max-width: 450px;
-    left: 50%;
+    left: 10%;
     transform: translateX(-50%);
   }
   
   .overlay {
     background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 100%);
+  }
+
+  .section {
+    padding-top: 20px;
   }
   
   .card-group {
@@ -534,8 +532,7 @@ footer {
   }
   
   .card {
-    width: 90%;
-    max-width: 350px;
+    max-width: 375px;
   }
   
   .promo {
@@ -548,7 +545,6 @@ footer {
   .promo .text {
     width: 100%;
     max-width: 90%;
-    margin-bottom: 30px;
   }
   
   .two-card .card {
@@ -563,22 +559,33 @@ footer {
 }
 
 @media (max-width: 480px) {
+  h1{
+    font-size: 2rem;
+  }
+  
+  h2{
+    font-size: 1.5rem;
+  }
+
+  h3{
+    font-size: 1.2rem;
+  }
+
+  p{
+    font-size: 1rem;
+  }
+  
   .hero {
-    min-height: 500px;
+    min-height: 450px;
   }
   
   .hero .content {
     padding: 30px 20px;
-    width: 85%;
+    left: auto;
   }
   
-  .hero h1 {
-    font-size: 2rem;
-  }
-  
-  .hero p {
-    font-size: 1rem;
-    margin-bottom: 20px;
+  .card {
+    max-width: 300px;
   }
   
   .button-group {
@@ -591,22 +598,6 @@ footer {
     padding: 12px 15px;
   }
   
-  .promo h2 {
-    font-size: 1.8rem;
-  }
-  
-  .promo p {
-    font-size: 1rem;
-  }
-  
-  .form-section h2 {
-    font-size: 1.8rem;
-  }
-  
-  .form-section p {
-    font-size: 0.9rem;
-  }
-
   form{
     flex-direction: column;
     align-items: center;
