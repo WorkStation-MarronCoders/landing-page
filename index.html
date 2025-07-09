@@ -1,166 +1,337 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Workstation Landing</title>
-  <link rel="stylesheet" href="css/styles.css" />
-  <!-- Puedes añadir este enlace para cargar la fuente Inter desde Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workstation Landing</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Puedes añadir este enlace para cargar la fuente Inter desde Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <header>
+      <img src="Images/logo.jpg" alt="Logo" class="logo" />
+      <nav>
+        <a
+          href="#"
+          class="lang"
+          data-en="Rent with us"
+          data-es="Alquila con nosotros"
+          >Rent with us</a
+        >
+        <a
+          href="#"
+          class="lang"
+          data-en="Host with us"
+          data-es="Aloja con nosotros"
+          >Host with us</a
+        >
+        <a href="#" class="lang" data-en="Reviews" data-es="Reseñas">Reviews</a>
 
-</head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <img src="Images/logo.jpg" alt="Logo" class="logo" />
-    <nav>
-      <a href="#" class="lang" data-en="Rent with us" data-es="Alquila con nosotros">Rent with us</a>
-      <a href="#" class="lang" data-en="Host with us" data-es="Aloja con nosotros">Host with us</a>
-      <a href="#" class="lang" data-en="Reviews" data-es="Reseñas">Reviews</a>
-      
-      <div class="language-switcher">
-        <button id="en-btn" class="language-btn active">EN</button>
-        <button id="es-btn" class="language-btn">ES</button>
-      </div>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="hero-background">
-      <img src="Images/hero-image.png" alt="Coworking Image" />
-      <div class="overlay"></div>
-    </div>
-    <div class="content fade-in">
-      <h1>Workstation</h1>
-      <p class="lang" data-en="Learn more about our offices and coworking spaces, and how to start renting now!" data-es="Conoce más sobre nuestras oficinas y espacios de coworking, ¡y cómo empezar a alquilar ahora!">Learn more about our offices and coworking spaces, and how to start renting now!</p>
-      <div class="button-group">
-        <button class="lang" data-en="I want to rent" data-es="Quiero alquilar">I want to rent</button>
-        <button class="lang secondary" data-en="I want to host" data-es="Quiero ser anfitrión">I want to host</button>
-      </div>
-    </div>
-  </section>
-
-  <!-- 3 Info Cards -->
-  <section class="section">
-    <h2 class="lang" data-en="Why Choose WorkStation?" data-es="¿Por qué elegir WorkStation?">Why Choose WorkStation?</h2>
-    <div class="card-group">
-      <div class="card fade-in">
-        <div class="card-icon">
-          <i class="fas fa-chart-line"></i>
+        <div class="language-switcher">
+          <button id="en-btn" class="language-btn active">EN</button>
+          <button id="es-btn" class="language-btn">ES</button>
         </div>
-        <h3 class="lang" data-en="More productivity" data-es="Mayor productividad">More productivity</h3>
-        <p class="lang" data-en="Do more with your time, and spend less time worrying about where you work with WorkStation." data-es="Haz más con tu tiempo y preocúpate menos por dónde trabajas con WorkStation.">
-          Do more with your time, and spend less time worrying about where you work with WorkStation.
-        </p>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-background">
+        <img src="Images/hero-image.png" alt="Coworking Image" />
+        <div class="overlay"></div>
       </div>
-      <div class="card fade-in">
-        <div class="card-icon">
-          <i class="fas fa-piggy-bank"></i>
+      <div class="content fade-in">
+        <h1>Workstation</h1>
+        <p
+          class="lang"
+          data-en="Learn more about our offices and coworking spaces, and how to start renting now!"
+          data-es="Conoce más sobre nuestras oficinas y espacios de coworking, ¡y cómo empezar a alquilar ahora!">
+          Learn more about our offices and coworking spaces, and how to start
+          renting now!
+        </p>
+        <div class="button-group">
+          <button
+            class="lang"
+            data-en="I want to rent"
+            data-es="Quiero alquilar">
+            I want to rent
+          </button>
+          <button
+            class="lang secondary"
+            data-en="I want to host"
+            data-es="Quiero ser anfitrión">
+            I want to host
+          </button>
         </div>
-        <h3 class="lang" data-en="More savings" data-es="Más ahorros">More savings</h3>
-        <p class="lang" data-en="Spend less and save more with WorkStation's amazing deals and accessible work spaces" data-es="Gasta menos y ahorra más con las increíbles ofertas y espacios de trabajo accesibles de WorkStation">
-          Spend less and save more with WorkStation's amazing deals and accessible work spaces
-        </p>
       </div>
-      <div class="card fade-in">
-        <div class="card-icon">
-          <i class="fa-solid fa-volume-xmark"></i>
+    </section>
+
+    <!-- 3 Info Cards -->
+    <section class="section">
+      <h2
+        class="lang"
+        data-en="Why Choose WorkStation?"
+        data-es="¿Por qué elegir WorkStation?">
+        Why Choose WorkStation?
+      </h2>
+      <div class="card-group">
+        <div class="card fade-in">
+          <div class="card-icon">
+            <i class="fas fa-chart-line"></i>
+          </div>
+          <h3
+            class="lang"
+            data-en="More productivity"
+            data-es="Mayor productividad">
+            More productivity
+          </h3>
+          <p
+            class="lang"
+            data-en="Do more with your time, and spend less time worrying about where you work with WorkStation."
+            data-es="Haz más con tu tiempo y preocúpate menos por dónde trabajas con WorkStation.">
+            Do more with your time, and spend less time worrying about where you
+            work with WorkStation.
+          </p>
         </div>
-        <h3 class="lang" data-en="No Distractions" data-es="Sin Distracciones">No Distractions</h3>
-        <p class="lang" data-en="With our work spaces, say goodbye to distractions and concentrate on your work with ease." data-es="Con nuestros espacios de trabajo, di adiós a las distracciones y concéntrate en tu trabajo con facilidad.">
-          With our work spaces, say goodbye to distractions and concentrate on your work with ease.
+        <div class="card fade-in">
+          <div class="card-icon">
+            <i class="fas fa-piggy-bank"></i>
+          </div>
+          <h3 class="lang" data-en="More savings" data-es="Más ahorros">
+            More savings
+          </h3>
+          <p
+            class="lang"
+            data-en="Spend less and save more with WorkStation's amazing deals and accessible work spaces"
+            data-es="Gasta menos y ahorra más con las increíbles ofertas y espacios de trabajo accesibles de WorkStation">
+            Spend less and save more with WorkStation's amazing deals and
+            accessible work spaces
+          </p>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">
+            <i class="fa-solid fa-volume-xmark"></i>
+          </div>
+          <h3
+            class="lang"
+            data-en="No Distractions"
+            data-es="Sin Distracciones">
+            No Distractions
+          </h3>
+          <p
+            class="lang"
+            data-en="With our work spaces, say goodbye to distractions and concentrate on your work with ease."
+            data-es="Con nuestros espacios de trabajo, di adiós a las distracciones y concéntrate en tu trabajo con facilidad.">
+            With our work spaces, say goodbye to distractions and concentrate on
+            your work with ease.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Section -->
+    <section class="promo">
+      <img src="Images/services.jpg" alt="Workspaces Image" />
+      <div class="text fade-in">
+        <h2 class="lang" data-en="Rent with us" data-es="Alquila con nosotros">
+          Rent with us
+        </h2>
+        <p
+          class="lang"
+          data-en="With WorkStation, gain flexibility and efficiency in our workspaces. Find your ideal office and get started with the new way of working with collaborators."
+          data-es="Con WorkStation, obtén flexibilidad y eficiencia en nuestros espacios de trabajo. Encuentra tu oficina ideal y comienza con la nueva forma de trabajar con colaboradores.">
+          With WorkStation, gain flexibility and efficiency in our workspaces.
+          Find your ideal office and get started with the new way of working
+          with collaborators.
         </p>
+        <button class="lang" data-en="Get started" data-es="Comenzar">
+          Get started
+        </button>
       </div>
-    </div>
-  </section>  
+    </section>
 
-  <!-- Promo Section -->
-  <section class="promo">
-    <img src="Images/services.jpg" alt="Workspaces Image" />
-    <div class="text fade-in">
-      <h2 class="lang" data-en="Rent with us" data-es="Alquila con nosotros">Rent with us</h2>
-      <p class="lang" data-en="With WorkStation, gain flexibility and efficiency in our workspaces. Find your ideal office and get started with the new way of working with collaborators." data-es="Con WorkStation, obtén flexibilidad y eficiencia en nuestros espacios de trabajo. Encuentra tu oficina ideal y comienza con la nueva forma de trabajar con colaboradores.">With WorkStation, gain flexibility and efficiency in our workspaces. Find your ideal office and get started with the new way of working with collaborators.</p>
-      <button class="lang" data-en="Get started" data-es="Comenzar">Get started</button>
-    </div>
-  </section>
-
-  <!-- 2 Info Cards -->
-  <section class="section two-card">
-    <h2 class="lang" data-en="Key Benefits" data-es="Beneficios Clave">Key Benefits</h2>
-    <div class="card-group">
-      <div class="card fade-in">
-        <h3 class="lang" data-en="Scalable Options" data-es="Opciones Escalables">Scalable Options</h3>
-        <p class="lang" data-en="Scale your office size up or down as your team changes." data-es="Escala el tamaño de tu oficina a medida que cambia tu equipo.">Scale your office size up or down as your team changes.</p>
+    <!-- 2 Info Cards -->
+    <section class="section two-card">
+      <h2 class="lang" data-en="Key Benefits" data-es="Beneficios Clave">
+        Key Benefits
+      </h2>
+      <div class="card-group">
+        <div class="card fade-in">
+          <h3
+            class="lang"
+            data-en="Scalable Options"
+            data-es="Opciones Escalables">
+            Scalable Options
+          </h3>
+          <p
+            class="lang"
+            data-en="Scale your office size up or down as your team changes."
+            data-es="Escala el tamaño de tu oficina a medida que cambia tu equipo.">
+            Scale your office size up or down as your team changes.
+          </p>
+        </div>
+        <div class="card fade-in">
+          <h3 class="lang" data-en="24/7 Access" data-es="Acceso 24/7">
+            24/7 Access
+          </h3>
+          <p
+            class="lang"
+            data-en="Work on your own schedule with unrestricted access to your office."
+            data-es="Trabaja en tu propio horario con acceso sin restricciones a tu oficina.">
+            Work on your own schedule with unrestricted access to your office.
+          </p>
+        </div>
       </div>
-      <div class="card fade-in">
-        <h3 class="lang" data-en="24/7 Access" data-es="Acceso 24/7">24/7 Access</h3>
-        <p class="lang" data-en="Work on your own schedule with unrestricted access to your office." data-es="Trabaja en tu propio horario con acceso sin restricciones a tu oficina.">Work on your own schedule with unrestricted access to your office.</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Video Section -->
-  <section class="section video-section fade-in">
-    <h2 class="lang" data-en="Get to Know Us" data-es="Conócenos">Get to Know Us</h2>
-    <div class="card-group video-group">
-      <div class="card video-card">
-        <h3 class="lang" data-en="About the Team" data-es="Sobre el Equipo">About the Team</h3>
-        <video controls poster="Images/team-thumbnail.jpg">
-          <source src="videos/Video About the Team.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+    <!-- Video Section -->
+    <section class="section video-section fade-in">
+      <h2 class="lang" data-en="Get to Know Us" data-es="Conócenos">
+        Get to Know Us
+      </h2>
+      <div class="card-group video-group">
+        <div class="card video-card">
+          <h3 class="lang" data-en="About the Team" data-es="Sobre el Equipo">
+            About the Team
+          </h3>
+          <video controls poster="Images/team-thumbnail.jpg">
+            <source src="videos/Video About the Team.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="card video-card">
+          <h3
+            class="lang"
+            data-en="About the Product"
+            data-es="Sobre el Producto">
+            About the Product
+          </h3>
+          <video controls poster="Images/product-thumbnail.jpg">
+            <source src="videos/About-the-product.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
-      <div class="card video-card">
-        <h3 class="lang" data-en="About the Product" data-es="Sobre el Producto">About the Product</h3>
-        <video controls poster="Images/product-thumbnail.jpg">
-          <source src="videos/About-the-product.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+    </section>
+
+    <section class="carousel-section fade-in">
+      <h2 class="lang" data-en="Our Workspaces" data-es="Nuestros Espacios">
+        Our Product
+      </h2>
+      <div class="carousel">
+        <button class="carousel-btn prev">&#10094;</button>
+        <div class="carousel-track">
+          <img src="Images/workspace1.png" alt="Workspace 1" />
+          <img src="Images/workspace2.png" alt="Workspace 2" />
+          <img src="Images/workspace3.jpeg" alt="Workspace 3" />
+          <img src="Images/workspace4.jpeg" alt="Workspace 4" />
+        </div>
+        <button class="carousel-btn next">&#10095;</button>
       </div>
-    </div>
-  </section>
+    </section>
 
+    <!-- Email Form -->
+    <section class="form-section fade-in">
+      <h2 class="lang" data-en="Stay Updated" data-es="Mantente Actualizado">
+        Stay Updated
+      </h2>
+      <p
+        class="lang"
+        data-en="Subscribe to our newsletter to receive the latest news and exclusive offers"
+        data-es="Suscríbete a nuestro boletín para recibir las últimas noticias y ofertas exclusivas">
+        Subscribe to our newsletter to receive the latest news and exclusive
+        offers
+      </p>
+      <form id="subscribeForm">
+        <input
+          type="email"
+          placeholder="Enter your email"
+          class="email-placeholder"
+          required />
+        <button
+          type="submit"
+          class="lang"
+          data-en="Subscribe"
+          data-es="Suscribirse">
+          Subscribe
+        </button>
+      </form>
+    </section>
 
-  <!-- Email Form -->
-  <section class="form-section fade-in">
-    <h2 class="lang" data-en="Stay Updated" data-es="Mantente Actualizado">Stay Updated</h2>
-    <p class="lang" data-en="Subscribe to our newsletter to receive the latest news and exclusive offers" data-es="Suscríbete a nuestro boletín para recibir las últimas noticias y ofertas exclusivas">Subscribe to our newsletter to receive the latest news and exclusive offers</p>
-    <form id="subscribeForm">
-      <input type="email" placeholder="Enter your email" class="email-placeholder" required>
-      <button type="submit" class="lang" data-en="Subscribe" data-es="Suscribirse">Subscribe</button>
-    </form>
-  </section>
-
-
-  <!-- Footer -->
-  <footer>
-    <div class="footer-content">
-      <div class="footer-section">
-        <h3 class="lang" data-en="About Us" data-es="Sobre Nosotros">About Us</h3>
-        <a href="#" class="lang" data-en="Our Story" data-es="Nuestra Historia">Our Story</a>
-        <a href="#" class="lang" data-en="How it Works" data-es="Cómo Funciona">How it Works</a>
-        <a href="#" class="lang" data-en="Careers" data-es="Carreras">Careers</a>
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3 class="lang" data-en="About Us" data-es="Sobre Nosotros">
+            About Us
+          </h3>
+          <a
+            href="#"
+            class="lang"
+            data-en="Our Story"
+            data-es="Nuestra Historia"
+            >Our Story</a
+          >
+          <a
+            href="#"
+            class="lang"
+            data-en="How it Works"
+            data-es="Cómo Funciona"
+            >How it Works</a
+          >
+          <a href="#" class="lang" data-en="Careers" data-es="Carreras"
+            >Careers</a
+          >
+        </div>
+        <div class="footer-section">
+          <h3 class="lang" data-en="Support" data-es="Soporte">Support</h3>
+          <a
+            href="#"
+            class="lang"
+            data-en="Help Center"
+            data-es="Centro de Ayuda"
+            >Help Center</a
+          >
+          <a href="#" class="lang" data-en="Contact Us" data-es="Contáctanos"
+            >Contact Us</a
+          >
+          <a
+            href="#"
+            class="lang"
+            data-en="Privacy Policy"
+            data-es="Política de Privacidad"
+            >Privacy Policy</a
+          >
+        </div>
+        <div class="footer-section">
+          <h3 class="lang" data-en="Resources" data-es="Recursos">Resources</h3>
+          <a href="#" class="lang" data-en="Blog" data-es="Blog">Blog</a>
+          <a href="#" class="lang" data-en="Partners" data-es="Socios"
+            >Partners</a
+          >
+          <a href="#" class="lang" data-en="Community" data-es="Comunidad"
+            >Community</a
+          >
+        </div>
       </div>
-      <div class="footer-section">
-        <h3 class="lang" data-en="Support" data-es="Soporte">Support</h3>
-        <a href="#" class="lang" data-en="Help Center" data-es="Centro de Ayuda">Help Center</a>
-        <a href="#" class="lang" data-en="Contact Us" data-es="Contáctanos">Contact Us</a>
-        <a href="#" class="lang" data-en="Privacy Policy" data-es="Política de Privacidad">Privacy Policy</a>
+      <div class="copyright">
+        &copy; 2025 WorkStation.
+        <span
+          class="lang"
+          data-en="All rights reserved."
+          data-es="Todos los derechos reservados."
+          >All rights reserved.</span
+        >
       </div>
-      <div class="footer-section">
-        <h3 class="lang" data-en="Resources" data-es="Recursos">Resources</h3>
-        <a href="#" class="lang" data-en="Blog" data-es="Blog">Blog</a>
-        <a href="#" class="lang" data-en="Partners" data-es="Socios">Partners</a>
-        <a href="#" class="lang" data-en="Community" data-es="Comunidad">Community</a>
-      </div>
-    </div>
-    <div class="copyright">
-      &copy; 2025 WorkStation. <span class="lang" data-en="All rights reserved." data-es="Todos los derechos reservados.">All rights reserved.</span>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="js/script.js"></script>
-</body>
+    <script src="js/script.js"></script>
+  </body>
 </html>
